@@ -9,18 +9,20 @@ No trabalho dessa semana vamos alterar o projeto para que a responsividade da ho
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
+- Nome: Yudy Samuell Magalhães Ramos
+- Matrícula: 90627
+- Proposta de projeto escolhida: Guia turístico do Japão
 - Breve descrição sobre seu projeto:
+Este projeto consiste em uma página web responsiva que apresenta destinos turísticos do Japão.
+A aplicação foi inicialmente desenvolvida com CSS puro e posteriormente refatorada utilizando o framework Bootstrap para melhorar a responsividade e padronização do layout.
+
+---
 
 ## Print da versão responsiva com Bootstrap [DESKTOP]
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Desktop](images/pagina%20com%20bootstrap.png)
+---
 
-## Print da versão responsiva com Bootstrap [MOBILE] (*)
+## Print da versão responsiva com Bootstrap [MOBILE]
 
-<<  COLOQUE A IMAGEM AQUI >>
-
-
-(*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
+![Mobile](images/pagina%20com%20%20bootstrap%20mobile.png)
