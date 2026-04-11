@@ -1,59 +1,34 @@
-/* RESET */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* HEADER */
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: #111;
-  color: white;
-  padding: 15px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.navbar {
+  background: #111 !important;
 }
 
-/* LOGO */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo img {
-  height: 50px;
-}
-
-.logo h1 {
+.navbar-brand {
+  color: white !important;
   font-size: 22px;
-  margin: 0;
+  font-weight: bold;
 }
 
-/* MENU */
-.menu ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  margin: 0;
+.navbar-brand img {
+  height: 45px;
 }
 
-.menu a {
-  color: white;
-  text-decoration: none;
+.nav-link {
+  color: white !important;
   transition: 0.3s;
 }
 
-.menu a:hover {
-  color: #b22222;
+.nav-link:hover {
+  color: #b22222 !important;
 }
 
-/* BANNER */
 .banner {
-  background: url('https://aerotur.com.br/wp-content/uploads/japao.jpg') no-repeat center;
+  background: url("https://aerotur.com.br/wp-content/uploads/japao.jpg")
+    no-repeat center;
   background-size: cover;
   color: white;
   text-align: center;
@@ -64,7 +39,6 @@ body {
   font-size: 36px;
 }
 
-/* INTRODUÇÃO */
 .info {
   padding: 60px 20px;
   text-align: center;
@@ -83,20 +57,16 @@ body {
   line-height: 1.6;
 }
 
-/* CARDS (AJUSTE FINO DO BOOTSTRAP) */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .card img {
   height: 180px;
   object-fit: cover;
-}
-
-.card {
-  border-radius: 10px;
-}
-
-.card {
-  border-radius: 10px;
-  transition: 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card:hover {
@@ -104,7 +74,6 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* SOBRE JAPÃO */
 .sobre-japao {
   background: #b22222;
   color: white;
@@ -132,7 +101,6 @@ body {
   max-width: 350px;
 }
 
-/* FORMULÁRIO */
 .formulario {
   background: #fff;
   padding: 50px 20px;
@@ -152,33 +120,40 @@ body {
   gap: 15px;
 }
 
+.formulario label {
+  text-align: left;
+  font-weight: bold;
+}
+
 .formulario input {
   padding: 12px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   border: 1px solid #ccc;
   font-size: 14px;
 }
 
 .formulario input:focus {
-  border-color: #b22222;
+  border-color: #b22222 !important;
+  box-shadow: none !important;
   outline: none;
 }
 
 .formulario button {
   padding: 12px;
-  background: #b22222;
+  background: #b22222 !important;
   color: white;
-  border: none;
+  border: none !important;
   border-radius: 8px;
+  font-size: 15px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .formulario button:hover {
-  background: #8b0000;
+  background: #8b0000 !important;
 }
 
-/* FOOTER */
+
 .footer {
   background: #111;
   color: white;
@@ -186,14 +161,10 @@ body {
   padding: 20px;
 }
 
-.redes {
-  margin-top: 10px;
-}
-
 .redes a {
   color: #ccc;
-  text-decoration: none;
   margin: 0 10px;
+  text-decoration: none;
   transition: 0.3s;
 }
 
@@ -201,23 +172,8 @@ body {
   color: white;
 }
 
-/* RESPONSIVIDADE */
+
 @media (max-width: 768px) {
-
-  /* HEADER */
-  .header {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .menu ul {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-
-  /* BANNER */
   .banner {
     padding: 80px 20px;
   }
@@ -226,7 +182,6 @@ body {
     font-size: 24px;
   }
 
-  /* SOBRE */
   .sobre-conteudo {
     flex-direction: column;
     text-align: center;
@@ -235,10 +190,5 @@ body {
   .sobre-texto,
   .sobre-imagem {
     width: 100%;
-  }
-
-  /* FORM */
-  .formulario {
-    padding: 30px 15px;
   }
 }
